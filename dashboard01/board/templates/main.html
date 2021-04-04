@@ -1,0 +1,175 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} 범죄분석 {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+		
+	<div class="stretch_area">
+        <div class="row">
+          <div class="col-12 col-12-css">
+            <div class="card card-chart">
+              <div class="card-header ">
+                <div class="row">
+                  <div class="col-sm-12 text-left">
+                    <h5 class="card-category">범죄율 상관관계 그래프</h5>
+                    <h2 class="card-title">Performance</h2>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="chart-area">
+                  <canvas id="chartBig1"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card card-chart">
+              <div class="card-header">
+				<div class="row">
+					<div class="col-sm-6 text-left">
+					 <h5 class="card-category">시간대별 범죄율 테이블</h5>
+					</div>
+				  
+					<div class="col-sm-6">
+					  <!-- <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+					    <label class="btn btn-sm btn-primary btn-simple active" id="0">
+					      <input type="radio" name="options" checked>
+					      <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">2019</span>
+					      <span class="d-block d-sm-none">
+					        <i class="tim-icons icon-single-02"></i>
+					      </span>
+					    </label>
+					    <label class="btn btn-sm btn-primary btn-simple" id="1">
+					      <input type="radio" class="d-none d-sm-none" name="options">
+					      <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">2018</span>
+					      <span class="d-block d-sm-none">
+					        <i class="tim-icons icon-gift-2"></i>
+					      </span>
+					    </label>
+					    <label class="btn btn-sm btn-primary btn-simple" id="2">
+					      <input type="radio" class="d-none" name="options">
+					      <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">2017</span>
+					      <span class="d-block d-sm-none">
+					        <i class="tim-icons icon-tap-02"></i>
+					      </span>
+					    </label>
+					  </div> -->
+					</div>
+				</div>
+               
+                  
+              </div>
+              <div class="card-body">
+                <div class="chart-area">
+                	
+                	
+                  <div class="x_content">
+
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th rowspan="2">시간</th>
+                          <th>새벽</th>
+                          <th>아침</th>
+                          <th>오전</th>
+                          <th>오후</th>
+                          <th>저녁</th>
+                          <th>밤</th>
+                        </tr>
+                        <tr>
+                          <th>04:00<br>~06:59</th>
+                          <th>07:00<br>~08:59</th>
+                          <th>09:00<br>~11:59</th>
+                          <th>12:00<br>~17:59</th>
+                          <th>18:00<br>~19:59</th>
+                          <th>20:00<br>~03:59</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">비율</th>
+                          <th>8.7%</th>
+                          <th>5.2%</th>
+                          <th>12.4%</th>
+                          <th>27.9%</th>
+                          <th>10.3%</th>
+                          <th>35.5%</th>
+                        </tr>    
+                      </tbody>
+                    </table>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card card-chart">
+              <div class="card-header">
+                <div class="row">
+					<div class="col-sm-6 text-left">
+					 <h5 class="card-category">시간대별 범죄율 그래프</h5>
+					</div>
+				  
+					<div class="col-sm-6">
+					  <!-- <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+					    <label class="btn btn-sm btn-primary btn-simple active" id="0">
+					      <input type="radio" name="options" checked>
+					      <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">2019</span>
+					      <span class="d-block d-sm-none">
+					        <i class="tim-icons icon-single-02"></i>
+					      </span>
+					    </label>
+					    <label class="btn btn-sm btn-primary btn-simple" id="1">
+					      <input type="radio" class="d-none d-sm-none" name="options">
+					      <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">2018</span>
+					      <span class="d-block d-sm-none">
+					        <i class="tim-icons icon-gift-2"></i>
+					      </span>
+					    </label>
+					    <label class="btn btn-sm btn-primary btn-simple" id="2">
+					      <input type="radio" class="d-none" name="options">
+					      <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">2017</span>
+					      <span class="d-block d-sm-none">
+					        <i class="tim-icons icon-tap-02"></i>
+					      </span>
+					    </label>
+					  </div> -->
+					</div>
+				</div>
+              </div>
+              <div class="card-body">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- stretch_area -->
+
+  
+{% endblock content %}
+ 
+{% block javascripts %}
+
+
+
+{% endblock javascripts %}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+ 

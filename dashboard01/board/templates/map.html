@@ -1,0 +1,353 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} 위치지도 {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+		
+	<div class="stretch_area">
+        <div class="row">
+        
+          <div class="col-8">
+            <div class="card card-chart">
+              <div class="card-header ">
+                <div class="row">
+                  	<div class="col-sm-6 text-left">
+					 <h5 class="card-category">지역구별 CCTV개수</h5>
+					</div>
+				  
+				  	<!-- TAB  -->
+					<div class="col-sm-6">
+					  <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+					    <label class="btn btn-sm btn-primary btn-simple active" id="0">
+					      <input type="radio" name="options" checked>
+					      <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">CCTV</span>
+					      <span class="d-block d-sm-none">
+					        <i class="tim-icons icon-single-02"></i>
+					      </span>
+					    </label>
+					    <label class="btn btn-sm btn-primary btn-simple" id="1">
+					      <input type="radio" class="d-none d-sm-none" name="options">
+					      <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">경찰서</span>
+					      <span class="d-block d-sm-none">
+					        <i class="tim-icons icon-gift-2"></i>
+					      </span>
+					    </label>
+					    <label class="btn btn-sm btn-primary btn-simple" id="2">
+					      <input type="radio" class="d-none" name="options">
+					      <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">보안등</span>
+					      <span class="d-block d-sm-none">
+					        <i class="tim-icons icon-tap-02"></i>
+					      </span>
+					    </label>
+					  </div>
+					</div>
+					<!-- // TAB  -->
+                  
+                </div>
+              </div>
+              <div class="card-body">
+                
+                
+                <div class="tab-contents">
+	              	<div id="cont0" class="tab-pane fade in active show">
+	              	
+						<div class="card_con flex_area">
+							탭영역1
+							
+						</div>
+					</div>
+	              	
+	              	<div id="cont1" class="tab-pane fade">
+	              	
+		              	<div class="card_con flex_area">
+					
+							탭영역2
+						
+						</div>
+	              	         	
+	              	</div>
+	              	<div id="cont2" class="tab-pane fade">
+	              	
+		              	<div class="card_con flex_area">
+					
+							탭영역3
+						
+						</div>
+	              	         	
+	              	</div>
+            	</div>
+                
+                
+                
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <div class="col-4 stretch_area3">
+          
+	          <div class="row">          
+		          <div class="col-12">
+		            <div class="card card-chart">
+		              <div class="card-header ">
+		                <div class="row">
+		                  <div class="col-sm-12 text-left">
+		                    <h5 class="card-category">지역구별 CCTV개수 TOP5</h5>
+		                  </div>
+		                  
+		                </div>
+		              </div>
+		              <div class="card-body">
+
+		                  
+		                  <div class="x_content">
+                    <div class="widget_summary">
+                      <div class="w_left w_25">
+                        <span>부산진구</span>
+                      </div>
+                      <div class="w_center w_55">
+                        <div class="progress">
+                          <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">
+                            <span class="sr-only">60% Complete</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w_right w_20">
+                        <span>2,860</span>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+
+                    <div class="widget_summary">
+                      <div class="w_left w_25">
+                        <span>연제구</span>
+                      </div>
+                      <div class="w_center w_55">
+                        <div class="progress">
+                          <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+                            <span class="sr-only">60% Complete</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w_right w_20">
+                        <span>2,500</span>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="widget_summary">
+                      <div class="w_left w_25">
+                        <span>해운대구</span>
+                      </div>
+                      <div class="w_center w_55">
+                        <div class="progress">
+                          <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+                            <span class="sr-only">60% Complete</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w_right w_20">
+                        <span>2,130</span>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="widget_summary">
+                      <div class="w_left w_25">
+                        <span>강서구</span>
+                      </div>
+                      <div class="w_center w_55">
+                        <div class="progress">
+                          <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                            <span class="sr-only">60% Complete</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w_right w_20">
+                        <span>1754</span>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="widget_summary">
+                      <div class="w_left w_25">
+                        <span>사하구</span>
+                      </div>
+                      <div class="w_center w_55">
+                        <div class="progress">
+                          <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 17%;">
+                            <span class="sr-only">60% Complete</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w_right w_20">
+                        <span>1230</span>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    
+                  </div>
+		                  
+          
+		             
+		              </div>
+		            </div>
+		          </div>          
+	          </div>
+	          
+	          
+	          <div class="row">          
+		          <div class="col-12">
+		            <div class="card card-chart">
+		              <div class="card-header ">
+		                <div class="row">
+		                  <div class="col-sm-12 text-left">
+		                    <h5 class="card-category">지역구별 CCTV개수 LOW5</h5>
+		                  </div>
+		                  
+		                </div>
+		              </div>
+		              <div class="card-body">
+		                  
+		                  <div class="x_content">
+                    <div class="widget_summary">
+                      <div class="w_left w_25">
+                        <span>부산진구</span>
+                      </div>
+                      <div class="w_center w_55">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">
+                            <span class="sr-only">60% Complete</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w_right w_20">
+                        <span>2,860</span>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+
+                    <div class="widget_summary">
+                      <div class="w_left w_25">
+                        <span>연제구</span>
+                      </div>
+                      <div class="w_center w_55">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+                            <span class="sr-only">60% Complete</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w_right w_20">
+                        <span>2,500</span>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="widget_summary">
+                      <div class="w_left w_25">
+                        <span>해운대구</span>
+                      </div>
+                      <div class="w_center w_55">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+                            <span class="sr-only">60% Complete</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w_right w_20">
+                        <span>2,130</span>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="widget_summary">
+                      <div class="w_left w_25">
+                        <span>강서구</span>
+                      </div>
+                      <div class="w_center w_55">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                            <span class="sr-only">60% Complete</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w_right w_20">
+                        <span>1754</span>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="widget_summary">
+                      <div class="w_left w_25">
+                        <span>사하구</span>
+                      </div>
+                      <div class="w_center w_55">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 17%;">
+                            <span class="sr-only">60% Complete</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w_right w_20">
+                        <span>1230</span>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    
+                  </div>
+		                  
+          
+		               
+		              </div>
+		            </div>
+		          </div>          
+	          </div>
+	          
+	          <div class="row">          
+		          <div class="col-12">
+		            <div class="card card-chart">
+		              <div class="card-header ">
+		                <div class="row">
+		                  <div class="col-sm-12 text-left">
+		                    <h5 class="card-category">CCTV개수와 범죄건수 상관관계</h5>
+		                    
+		                  </div>
+		                  
+		                </div>
+		              </div>
+		              <div class="card-body">
+		                <div class="chart-area">
+		                  
+		                </div>
+		              </div>
+		            </div>
+		          </div>          
+	          </div>
+	            
+          </div>    
+          
+        </div>
+        </div>
+        
+        
+        
+        
+
+  
+{% endblock content %}
+ 
+{% block javascripts %}
+
+
+
+{% endblock javascripts %}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+ 

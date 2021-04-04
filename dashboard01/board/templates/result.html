@@ -1,0 +1,183 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} 위치지도 {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+{% load static %}
+		
+	
+        <div class="stretch_area2">
+        
+        
+        
+        
+        
+        
+        
+        <div class="row">
+        
+          <div class="col-8">
+            <div class="card card-chart nocard">
+              <div class="card-header ">
+                <div class="row">
+                  	<div class="col-sm-6 text-left">
+					 <!-- <h5 class="card-category">지역구별 CCTV개수</h5> -->
+					</div>
+				  
+				  	<!-- TAB  -->
+					<div class="col-sm-6">
+					  <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+					    <label class="btn btn-sm btn-primary btn-simple active" id="0">
+					      <input type="radio" name="options" checked>
+					      <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">범죄지도</span>
+					      <span class="d-block d-sm-none">
+					        <i class="tim-icons icon-single-02"></i>
+					      </span>
+					    </label>
+					    <label class="btn btn-sm btn-primary btn-simple" id="1">
+					      <input type="radio" class="d-none" name="options">
+					      <span class="d-none d-sm-block d-md-block d-lg-block d-xl-block">인구지도</span>
+					      <span class="d-block d-sm-none">
+					        <i class="tim-icons icon-tap-02"></i>
+					      </span>
+					    </label>
+					  </div>
+					</div>
+					
+						
+
+					
+					
+					<!-- // TAB  -->
+                  
+                </div>
+              </div>
+              <div class="card-body">
+              
+              
+              		<div class="tab-contents">
+		              	<div id="cont0" class="tab-pane fade in active show">
+		              	
+							<div class="card_con flex_area">
+						
+								<div class="rank_area">
+									<h3>Dangerous Zone 5</h3>
+									<ul>
+										<li>1.부산진구</li>
+										<li>2.해운대구</li>
+										<li>3.사하구</li>
+										<li>4.남구</li>
+										<li>5.연제구</li>
+									</ul>
+								</div>
+							
+								<div class="map_area">
+									<img src="{% static "assets/img/map1.jpg" %}">
+								</div>
+							
+							</div>
+						</div>
+			              	
+			              	<div id="cont1" class="tab-pane fade">
+			              	
+			              	<div class="card_con flex_area">
+						
+								<div class="rank_area">
+									<h3>Safety Zone 5</h3>
+									<ul>
+										<li>1.부산진구</li>
+										<li>2.해운대구</li>
+										<li>3.사하구</li>
+										<li>4.남구</li>
+										<li>5.연제구</li>
+									</ul>
+								</div>
+							
+								<div class="map_area">
+									<img src="{% static "assets/img/map1.jpg" %}">
+								</div>
+							
+							</div>
+			              	
+			              	
+			              </div>
+              			</div>
+
+             
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <div class="col-4">
+            <div class="card card-chart">
+              <div class="card-header ">
+                <div class="row">
+                  	<div class="col-sm-6 text-left">
+					 <h5 class="card-category">부산진구</h5>
+					</div>
+				  
+                  
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="chart-area">
+                  
+                </div>
+              </div>
+            </div>
+          </div>   
+          
+        </div>
+        
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-chart">
+              <!-- <div class="card-header ">
+                <div class="row">
+                  <div class="col-sm-12 text-left">
+                    <h5 class="card-category">범죄율 상관관계 그래프</h5>
+                  </div>
+                  
+                </div>
+              </div> -->
+              <div class="card-body">
+                <div class="chart-area">
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+        
+
+  
+{% endblock content %}
+ 
+{% block javascripts %}
+
+
+
+
+
+{% endblock javascripts %}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+ 

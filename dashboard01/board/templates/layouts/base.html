@@ -1,0 +1,89 @@
+<!--
+=========================================================
+* * Black Dashboard - v1.0.1
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/black-dashboard
+* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <title>
+  	안전 귀갓길 - {% block title %}{% endblock %}
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link rel="stylesheet" href="{% static '/assets/css/nucleo-icons.css' %}">
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="{% static '/assets/css/style.css' %}">
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link rel="stylesheet" href="{% static '/assets/demo/demo.css' %}">
+  <!-- Specific Page CSS goes HERE  -->
+  {% block stylesheets %}{% endblock stylesheets %}
+  
+</head>
+
+<body class="">
+  <div class="wrapper">
+    
+    {% include 'includes/sidebar.html' %}
+    
+    <div class="main-panel">
+ 
+      
+      <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Navbar -->
+      
+      
+      <div class="content">
+      
+      	{% block content %}{% endblock content %}
+
+      </div>
+      
+      {% include 'includes/footer.html' %}
+      
+      
+    </div>
+  </div>  
+  
+  
+  <!-- {% include 'includes/fixed-plugin.html' %} -->
+  
+  {% include 'includes/scripts.html' %}
+  
+  <!-- Specific Page JS goes HERE  -->
+  {% block javascripts %}{% endblock javascripts %}
+   
+  
+</body>
+
+</html>
